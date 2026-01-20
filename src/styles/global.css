@@ -29,9 +29,16 @@ body {
 	line-height: 1.5;
 }
 
+header {
+	width: 100vw;
+	background: var(--nav-color);
+}
+
 header div {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
+	gap: 15px;
+	padding: 2rem;
 }
 
 h1 {
@@ -136,10 +143,9 @@ footer a {
 @media screen and (min-width: 636px) {
 	.nav-links {
 		margin-left: 5em;
-		display: inline;
+		display: block;
 		position: static;
 		width: auto;
-		background: var(--nav-color);
 	}
 
 	.nav-links a {
