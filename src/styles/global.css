@@ -13,6 +13,7 @@
 	--foreground: #0d0d0d;
 	--background: #f1f5f9;
 	--nav-color: #eeddcc;
+	--hover-color: #2354d1;
 
 }
 
@@ -68,20 +69,21 @@ footer {
 	margin-top: 2rem;
 	align-items: center;
 	justify-content: space-between;
+	border-top: 2px solid var(--hover-color);
 }
 
 footer a {
 	padding: 0.5rem 1rem;
-	color: white;
-	background-color: #4c1d95;
+	color: var(--foreground);
+	background-color: var(--background);
 	text-decoration: none;
 }
 
 /* nav styles */
 .menu {
-	background-color: #0d0950;
+	background-color: var(--background);
 	border: none;
-	color: #fff;
+	color: var(--foreground);
 	font-size: 1.2rem;
 	font-weight: bold;
 	padding: 5px 10px;
@@ -106,7 +108,7 @@ footer a {
 
 .nav-links a:hover,
 .nav-links a:focus {
-	background-color: #ff9776;
+	background-color: var(--hover-color);
 }
 
 :has(.menu[aria-expanded="true"]) .nav-links {
