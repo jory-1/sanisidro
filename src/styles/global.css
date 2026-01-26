@@ -144,6 +144,37 @@ footer a {
 	box-shadow: 0 0 1px 1px mediumpurple;
 }
 
+.hero-section {
+	height: 80vh;
+}
+
+section {
+	height: 80vh;
+	text-align: left;
+	font-size: 1.61em;
+	margin: auto;
+
+}
+
+
+
+section:nth-child(odd) {
+	background-color: var(--nav-color);
+}
+
+section h2 {
+	text-align: center;
+	font-size: 2rem;
+}
+
+section a {
+	padding: 1em;
+	border: solid 3px var(--nav-color);
+	border-radius: 20px;
+	background-color: var(--hover-color);
+}
+
+
 
 @media screen and (min-width: 636px) {
 	header {
