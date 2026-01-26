@@ -24,14 +24,13 @@ html {
 }
 
 body {
-	margin: 0 auto;
+	margin: 0;
 	width: 100%;
 	padding: 1rem;
-	line-height: 1.5;
 }
 
 header {
-	width: 100vw;
+	width: 100%;
 	background: var(--nav-color);
 }
 
@@ -40,6 +39,8 @@ header div {
 	justify-content: space-evenly;
 	gap: 15px;
 	padding: 2rem;
+	width: inherit;
+	height: 100%;
 }
 
 h1 {
